@@ -4,6 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { IoMdSwap } from 'react-icons/io';
 import { FaHeart } from "react-icons/fa";
 import { MdLocalGasStation } from "react-icons/md";
+import Image from "next/image"
 
 
 const Hero = () => {
@@ -13,7 +14,7 @@ const Hero = () => {
 <div className='container-of-cars grid grid-rows-1 grid-cols-2 place-items-center p-10'>
   {/* CAR 1 */}
   <div className='car1 w-[640px] h-[360px] bg-[#54A6FF] rounded-xl relative'>
-    <img src="/assests/car1.png" alt="Car1" className='absolute bottom-2 left-1/2 transform -translate-x-1/2' />
+    <Image src="/assests/car1.png" alt="Car1" width={406} height={116} className='absolute bottom-2 left-1/2 transform -translate-x-1/2' />
    <div className='text-car text-[#FFFFFF] w-[284px] h-[224px] absolute top-6 left-6 space-y-4'>
    <p className='font-semibold text-[32px] leading-snug'>The Best Platform For Car Rental</p>
     <p className='font-medium text-base'>Ease of doing a car rental safely and reliably. Ofcourse at a low price.</p>
@@ -22,7 +23,7 @@ const Hero = () => {
   </div>
 {/* Car2 */}
   <div className='car2 w-[640px] h-[360px] bg-[#3563E9] rounded-xl relative'>
-  <img src="/assests/car2.png" alt="Car2" className='absolute bottom-2 left-1/2 transform -translate-x-1/2' />
+  <Image src="/assests/car2.png" alt="Car2" width={340} height={108} className='absolute bottom-2 left-1/2 transform -translate-x-1/2' />
   <div className='text-car text-[#FFFFFF] w-[284px] h-[224px] absolute top-6 left-6 space-y-4'>
    <p className='font-semibold text-[32px] leading-snug'>Easy way to rent a car at low price</p>
     <p className='font-medium text-base'>Providing cheap car rental services and safe and comfortable facilities.</p>
@@ -135,10 +136,12 @@ const Hero = () => {
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car3.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            height={72}
+            width={232}
+            className="object-contain"
           />
         </div>
 
@@ -149,11 +152,11 @@ const Hero = () => {
             <span>90L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>2 People</span>
           </div>
         </div>
@@ -186,10 +189,12 @@ const Hero = () => {
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car2.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            height={62}
+            width={204}
+            className="object-contain"
           />
         </div>
 
@@ -200,11 +205,11 @@ const Hero = () => {
             <span>90L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>2 People</span>
           </div>
         </div>
@@ -236,10 +241,12 @@ const Hero = () => {
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car4.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            height={68}
+            width={220}
+            className="object-contain"
           />
         </div>
 
@@ -250,11 +257,11 @@ const Hero = () => {
             <span>70L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>2 People</span>
           </div>
         </div>
@@ -287,10 +294,12 @@ const Hero = () => {
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car2.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            height={64}
+            width={204}
+            className="object-contain"
           />
         </div>
 
@@ -301,11 +310,11 @@ const Hero = () => {
             <span>80L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>2 People</span>
           </div>
         </div>
@@ -351,10 +360,12 @@ const Hero = () => {
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car5.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            height={100}
+            width={224}
+            className="object-contain"
           />
         </div>
 
@@ -365,11 +376,11 @@ const Hero = () => {
             <span>70L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>6 People</span>
           </div>
         </div>
@@ -402,10 +413,12 @@ const Hero = () => {
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car6.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            height={100}
+            width={248}
+            className="object-contain"
           />
         </div>
 
@@ -416,11 +429,11 @@ const Hero = () => {
             <span>80L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16}/>
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>6 People</span>
           </div>
         </div>
@@ -452,10 +465,12 @@ const Hero = () => {
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car7.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            height={100}
+            width={224}
+            className="object-contain"
           />
         </div>
 
@@ -466,11 +481,11 @@ const Hero = () => {
             <span>90L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>6 People</span>
           </div>
         </div>
@@ -503,9 +518,11 @@ const Hero = () => {
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car8.png"
             alt="car3"
+            height={100}
+            width={248}
             className="w-[200px] object-contain"
           />
         </div>
@@ -517,11 +534,11 @@ const Hero = () => {
             <span>80L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>2 People</span>
           </div>
         </div>
@@ -561,10 +578,12 @@ const Hero = () => {
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car9.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            height={108}
+            width={264}
+            className="object-contain"
           />
         </div>
 
@@ -575,11 +594,11 @@ const Hero = () => {
             <span>70L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>4 People</span>
           </div>
         </div>
@@ -612,10 +631,12 @@ const Hero = () => {
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car10.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            height={112}
+            width={288}
+            className="object-contain"
           />
         </div>
 
@@ -626,11 +647,11 @@ const Hero = () => {
             <span>80L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>6 People</span>
           </div>
         </div>
@@ -662,10 +683,12 @@ const Hero = () => {
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car9.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            height={108}
+            width={264}
+            className="object-contain"
           />
         </div>
 
@@ -676,11 +699,11 @@ const Hero = () => {
             <span>90L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>4 People</span>
           </div>
         </div>
@@ -713,10 +736,12 @@ const Hero = () => {
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car10.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            height={112}
+            width={288}
+            className="object-contain"
           />
         </div>
 
@@ -727,11 +752,11 @@ const Hero = () => {
             <span>80L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16}   />
             <span>6 People</span>
           </div>
         </div>

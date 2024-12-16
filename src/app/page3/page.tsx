@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { FaHeart } from "react-icons/fa";
 import { MdLocalGasStation } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
+import Image from "next/image"
 import React from 'react'
 
 const Page3 = () => {
@@ -92,7 +93,7 @@ RIGHT SECTION */}
     <div className='right-section m-6 flex flex-col h-[508px]'>
       {/* Car Image and Text */}
       <div className='car2 w-[492px] h-[360px] bg-[#3563E9] rounded-xl relative'>
-        <img src="/assests/car2.png" alt="Car2" className='absolute bottom-2 left-1/2 transform -translate-x-1/2' />
+        <Image src="/assests/car2.png" alt="Car2" width={380} height={120} className='absolute bottom-2 left-1/2 transform -translate-x-1/2' />
         <div className='text-car text-[#FFFFFF] w-[372px] h-[160px] absolute top-6 left-6 space-y-4'>
           <p className='font-semibold text-[32px] leading-snug'>Sports car with the best design and acceleration</p>
           <p className='font-medium text-base'>Safety and comfort while driving a futuristic and elegant sports car.</p>
@@ -102,10 +103,10 @@ RIGHT SECTION */}
       {/* Images */}
       <div className='flex rounded-lg justify-around'>
         <div className='border-2 w-[148px] h-[124px] border-spacing-1 border-[#3563E9] rounded-lg mt-2 flex items-center justify-center'>
-          <img src="assests/view1.png.png" alt="" className='w-[132px] h-[108px]'/>
+          <Image src="/assests/view1.png.png" alt="" width={132} height={108}/>
         </div>
-        <div><img src="assests/view2.png.png" alt="" className='m-2 w-[148px] h-[124px]'/></div>
-        <div className='w-[148px] h-[124px] border-1'><img src="assests/view3.png.png" alt="" className='m-2 w-[148px] h-[124px]' /></div>
+        <div><Image src="/assests/view2.png.png" alt="" width={148} height={124} className='m-2'/></div>
+        <div className='w-[148px] h-[124px] border-1'><Image src="/assests/view3.png.png" alt="" width={148} height={124} className='m-2' /></div>
       </div>
     </div>
 
@@ -127,7 +128,8 @@ RIGHT SECTION */}
 
       {/* Description */}
       <p className="text-xl text-[#596780] leading-relaxed mb-8 flex items-center justify-center">
-        NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the "race track".
+      NISMO has become the embodiment of Nissan&apos;s outstanding performance, inspired by the most unforgiving proving ground, the &quot;race track&quot;.
+
       </p>
 
       {/* Features */}
@@ -177,7 +179,7 @@ RIGHT SECTION */}
       {/* Review 1 */}
       <div className="flex justify-between items-start space-x-4">
         <div className="flex items-start space-x-4">
-          <img src="/assests/profill.1.png" alt="Alex Stanton" className="w-12 h-12 rounded-full object-cover" />
+          <Image src="/assests/profill.1.png" alt="Alex Stanton" width={48} height={48} className="rounded-full object-cover" />
           <div>
             <h3 className="text-xl font-bold text-[#1A202C]">Alex Stanton</h3>
             <p className="text-sm text-gray-500 font-normal">CEO at Bukalapak</p>
@@ -190,7 +192,7 @@ RIGHT SECTION */}
       {/* Review 2 */}
       <div className="flex justify-between items-start space-x-4">
         <div className="flex items-start space-x-4">
-          <img src="/assests/profill.2.png" alt="Skylar Dias" className="w-12 h-12 rounded-full object-cover" />
+          <Image src="/assests/profill.2.png" alt="Skylar Dias" width={48} height={48} className=" rounded-full object-cover" />
           <div>
             <h3 className="text-xl font-bold text-[#1A202C]">Skylar Dias</h3>
             <p className="text-sm text-gray-50 font-normal0">CEO at Amazon</p>
@@ -231,10 +233,12 @@ RIGHT SECTION */}
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car3.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            width={272}
+            height={84}
+            className="object-contain"
           />
         </div>
 
@@ -245,11 +249,11 @@ RIGHT SECTION */}
             <span>90L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16}/>
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>2 People</span>
           </div>
         </div>
@@ -282,10 +286,12 @@ RIGHT SECTION */}
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car2.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            width={282}
+            height={72}
+            className="object-contain"
           />
         </div>
 
@@ -296,11 +302,11 @@ RIGHT SECTION */}
             <span>90L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>2 People</span>
           </div>
         </div>
@@ -332,10 +338,12 @@ RIGHT SECTION */}
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car4.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            width={244}
+            height={76}
+            className="object-contain"
           />
         </div>
 
@@ -346,11 +354,11 @@ RIGHT SECTION */}
             <span>70L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>2 People</span>
           </div>
         </div>
@@ -392,10 +400,12 @@ RIGHT SECTION */}
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car9.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            width={252}
+            height={112}
+            className="object-contain"
           />
         </div>
 
@@ -406,11 +416,11 @@ RIGHT SECTION */}
             <span>70L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>4 People</span>
           </div>
         </div>
@@ -443,10 +453,12 @@ RIGHT SECTION */}
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car10.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            width={254}
+            height={108}
+            className="object-contain"
           />
         </div>
 
@@ -457,11 +469,11 @@ RIGHT SECTION */}
             <span>80L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>6 People</span>
           </div>
         </div>
@@ -493,10 +505,12 @@ RIGHT SECTION */}
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car8.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            width={252}
+            height={112}
+            className="object-contain"
           />
         </div>
 
@@ -507,11 +521,11 @@ RIGHT SECTION */}
             <span>90L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16}/>
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>4 People</span>
           </div>
         </div>

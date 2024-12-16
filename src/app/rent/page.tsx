@@ -1,3 +1,4 @@
+import Image from "next/image"
 import React from "react";
 import {
   FaHome,
@@ -98,16 +99,18 @@ const Rent = () => {
         <div className="w-full h-[272px] rounded-lg mb-6 relative">
           {/* Simulated map and route */}
           <div className="absolute inset-0 flex justify-center items-center">
-          <img src="assests/maps.png.png" alt="maps" />
+          <Image src="/assests/maps.png.png" alt="maps" width={486} height={272} />
           </div>
         </div>
 
         {/* Car Info Section */}
         <div className="flex items-center gap-4 w-[132px] h-[72px] mb-6 ml-3">
-          <img
+          <Image
             src="/assests/car2.png"
             alt="Car"
-            className="w-[116px] h-[40px] rounded-lg bg-[#3563E9]"
+            width={116}
+            height={40}
+            className="rounded-lg bg-[#3563E9]"
           />
           <div>
             <h3 className="text-lg font-semibold text-[#1A202C]">
@@ -252,7 +255,7 @@ const Rent = () => {
       <div className="right-section">
         <div className=" bg-white w-[524px] h-[324px] rounded-lg shadow-md p-6 mb-7">
           {/* Header */}
-          <img src="/assests/RentalCar.png" alt="" />
+          <Image src="/assests/RentalCar.png" alt="" width={524} height={324} />
         </div>
         <div>
           <div className="w-[524px] h-[480px] bg-white rounded-xl shadow-md p-6">
@@ -270,10 +273,12 @@ const Rent = () => {
               {/* Transaction 1 */}
               <li className="flex justify-between items-center py-3 border-b border-gray-200 last:border-none">
                 <div className="flex items-center w-[132px] h-[70px]">
-                  <img
+                  <Image
                     src="/assests/car2.png"
                     alt="Nissan GT – R"
-                    className="w-[114px] h-[36px] rounded-md object-cover"
+                    width={114}
+                    height={36}
+                    className="rounded-md object-cover"
                   />
                 </div>
                 <div className="w-[476px] h-[70px] flex justify-between items-center px-5">
@@ -292,10 +297,12 @@ const Rent = () => {
               {/* Transaction 2 */}
               <li className="flex justify-between items-center py-3 border-b border-gray-200 last:border-none">
                 <div className="flex items-center w-[132px] h-[70px]">
-                  <img
+                  <Image
                     src="/assests/car1.png"
+                    width={114}
+                    height={36}
                     alt="Koenigsegg"
-                    className="w-[114px] h-[36px] rounded-md object-cover mr-4"
+                    className="rounded-md object-cover mr-4"
                 />
                 </div>
 
@@ -316,10 +323,12 @@ const Rent = () => {
               {/* Transaction 3 */}
               <li className="flex justify-between items-center py-3 border-b border-gray-200 last:border-none">
                 <div className="flex items-center w-[132px] h-[70px]">
-                  <img
+                  <Image
                     src="/assests/car3.png"
                     alt="Rolls – Royce"
-                    className="w-[114px] h-[36px] rounded-md object-cover mr-4"
+                    width={114}
+                    height={36}
+                    className="rounded-md object-cover mr-4"
                   />
                 </div>
                 <div className="w-[476px] h-[70px] flex justify-between items-center px-5"><div className="w-[108px] h-[48px]">
@@ -337,10 +346,12 @@ const Rent = () => {
               {/* Transaction 4 */}
               <li className="flex justify-between items-center py-3 border-b border-gray-200 last:border-none">
                 <div className="flex items-center w-[132px] h-[70px]">
-                  <img
+                  <Image
                     src="/assests/car4.png"
                     alt="CR – V"
-                    className="w-[114px] h-[36px] rounded-md object-cover mr-4"
+                    width={114}
+                    height={36}
+                    className="rounded-md object-cover mr-4"
                   />
                 </div>
                 <div className="w-[476px] h-[70px] flex justify-between items-center px-5"><div>

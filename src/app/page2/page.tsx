@@ -4,6 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { IoMdSwap } from "react-icons/io";
 import { FaHeart } from "react-icons/fa";
 import { MdLocalGasStation } from "react-icons/md";
+import Image from "next/image"
 
 const Page2 = () => {
   return (
@@ -209,10 +210,12 @@ const Page2 = () => {
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car3.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            width={272}
+            height={84}
+            className="object-contain"
           />
         </div>
 
@@ -223,11 +226,11 @@ const Page2 = () => {
             <span>90L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>2 People</span>
           </div>
         </div>
@@ -260,10 +263,12 @@ const Page2 = () => {
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car2.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            width={228}
+            height={72}
+            className="object-contain"
           />
         </div>
 
@@ -274,11 +279,11 @@ const Page2 = () => {
             <span>90L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>2 People</span>
           </div>
         </div>
@@ -310,10 +315,12 @@ const Page2 = () => {
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car4.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            width={224}
+            height={76}
+            className="object-contain"
           />
         </div>
 
@@ -324,11 +331,11 @@ const Page2 = () => {
             <span>70L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>2 People</span>
           </div>
         </div>
@@ -368,10 +375,12 @@ const Page2 = () => {
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car5.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            width={252}
+            height={112}
+            className="object-contain"
           />
         </div>
 
@@ -382,11 +391,11 @@ const Page2 = () => {
             <span>70L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16}/>
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>6 People</span>
           </div>
         </div>
@@ -419,10 +428,12 @@ const Page2 = () => {
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car6.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            width={254}
+            height={102}
+            className="object-contain"
           />
         </div>
 
@@ -433,11 +444,11 @@ const Page2 = () => {
             <span>80L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>6 People</span>
           </div>
         </div>
@@ -469,10 +480,12 @@ const Page2 = () => {
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car7.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            width={252}
+            height={112}
+            className="object-contain"
           />
         </div>
 
@@ -483,11 +496,11 @@ const Page2 = () => {
             <span>90L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>6 People</span>
           </div>
         </div>
@@ -526,10 +539,12 @@ const Page2 = () => {
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car9.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            width={264}
+            height={108}
+            className="object-contain"
           />
         </div>
 
@@ -540,11 +555,11 @@ const Page2 = () => {
             <span>70L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>4 People</span>
           </div>
         </div>
@@ -577,10 +592,12 @@ const Page2 = () => {
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car10.png"
             alt="car3"
-            className="w-[200px] object-contain"
+            width={308}
+            height={120}
+            className="object-contain"
           />
         </div>
 
@@ -591,11 +608,11 @@ const Page2 = () => {
             <span>80L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16}/>
             <span>6 People</span>
           </div>
         </div>
@@ -627,9 +644,11 @@ const Page2 = () => {
 
         {/* Image */}
         <div className="flex items-center justify-center my-4 absolute inset-0 mb-12">
-          <img
+          <Image
             src="/assests/car9.png"
             alt="car3"
+            width={264}
+            height={108}
             className="w-[200px] object-contain"
           />
         </div>
@@ -641,11 +660,11 @@ const Page2 = () => {
             <span>90L</span>
           </div>
           <div className="flex items-center gap-1">
-            <img src="/assests/manual.png" alt="Gear" className="w-4 h-4" />
+            <Image src="/assests/manual.png" alt="Gear" width={16} height={16} />
             <span>Manual</span>
           </div>
           <div className="flex items-center gap-[2px]">
-            <img src="/assests/people.png" alt="People" className="w-4 h-4" />
+            <Image src="/assests/people.png" alt="People" width={16} height={16} />
             <span>4 People</span>
           </div>
         </div>
@@ -674,6 +693,7 @@ const Page2 = () => {
 </div>
       </div>
     </div>
+   
   );
 };
 

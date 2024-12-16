@@ -4,6 +4,7 @@ import { FaChevronDown } from "react-icons/fa";
 import { FaPaypal, FaBitcoin } from "react-icons/fa";
 import { BsShieldCheck } from "react-icons/bs";
 import { AiFillStar } from "react-icons/ai";
+import Image from "next/image"
 
 
 const Payment = () => {
@@ -211,17 +212,15 @@ const Payment = () => {
             <label className="ml-3 text-sm font-medium text-gray-800">Credit Card</label>
           </div>
           <div className="flex gap-2">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_2021.svg/1200px-Visa_2021.svg.png"
-              alt="Visa"
-              className="h-6"
-            />
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg"
-              alt="Mastercard"
-              className="h-6"
-            />
-          </div>
+  <Image
+    src="/assests/Visa.png"
+    alt="Visa"
+    width={92}  // Set width
+    height={20} // Set height
+    className="object-contain"
+  />
+</div>
+
         </div>
 
         <div className="grid grid-cols-2 gap-6">
@@ -277,7 +276,7 @@ const Payment = () => {
           />
           <label className="ml-3 text-sm font-medium text-gray-800">PayPal</label>
         </div>
-        <FaPaypal className="text-blue-500 text-2xl" />
+        <Image src="/assests/PayPal.png" alt='' width={100} height={24}/>
       </div>
 
       {/* Bitcoin Section */}
@@ -290,7 +289,7 @@ const Payment = () => {
           />
           <label className="ml-3 text-sm font-medium text-gray-800">Bitcoin</label>
         </div>
-        <FaBitcoin className="text-orange-500 text-2xl" />
+        <Image src="/assests/Bitcoin.png" alt='' width={94} height={20}/>
       </div>
     </div>
     {/* confirmation */}
@@ -361,7 +360,7 @@ const Payment = () => {
       {/* Car Details */}
       <div className="flex items-center gap-4 mb-6">
         <div className="w-[96px] h-[72px] bg-[#3563E9] rounded-lg flex justify-center items-center">
-        <img src="/assests/car2.png" alt="" className='w-[88px] h-auto' />
+        <Image src="/assests/car2.png" alt="" width={90} height={36} />
         </div>
         <div>
           <h3 className="text-[32px] font-bold text-[#1A202C]">Nissan GT – R</h3>
