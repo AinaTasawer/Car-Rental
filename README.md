@@ -34,3 +34,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Navigation Guide
+
+This project contains five pages. Here's how you can navigate through them:
+
+- HomePage: Click on show more button to go to the page2-
+- Page2: Click on rent now button of Nissan GTR card to go to the page3
+- Page3/payment: Click on rent now below the infromation of Nissan GTR card to go to the payment page
+- Page4/rent: click on rent now below all the payment categories to go to the fifth page 
+ 
