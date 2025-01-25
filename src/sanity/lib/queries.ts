@@ -1,7 +1,7 @@
 import { groq } from "next-sanity";
 
 // export const allProducts=groq`*[_type == "car"]`;
- export const allProducts = `
+ export const allProducts = groq`
   *[_type == "car"]{
     _id,
     name,
@@ -15,4 +15,7 @@ import { groq } from "next-sanity";
 `;
 
 // export const four = groq`*[_type == "car"][0..3]`;
+
+
+
 
