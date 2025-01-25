@@ -1,16 +1,30 @@
-import React from 'react'
+"use client"
+
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link';
 import { IoIosArrowDown } from "react-icons/io";
 import { IoMdSwap } from 'react-icons/io';
-import { FaHeart } from "react-icons/fa";
-import { MdLocalGasStation } from "react-icons/md";
 import Image from "next/image"
-import Cards from '../cards/page';
+import Cards from '@/app/components/Cards';
+import { client } from '@/sanity/lib/client';
+import { allProducts} from '@/sanity/lib/queries';
 
 
 
 
 const Hero = () =>{
+    const [cars, setCars] = useState([])
+    const [Recommendedcars, setRecommendedcars] = useState([])
+
+    useEffect(() => {
+        async function fetchProduct() {
+            const fetchedCars = await client.fetch(allProducts)
+            setCars(fetchedCars.slice(0,4))
+            setRecommendedcars(fetchedCars.slice(4,12))
+        }
+        fetchProduct()
+    }, [])
+
  
   return (
     <div>
@@ -120,21 +134,45 @@ const Hero = () =>{
     </div>
   </div>
 </div>
-<Cards/>
+ <div className="card-container w-[1312px] h-[452px]">
+  <div className='w-[1312px] h-[44px] gap-[1076px] flex items-center justify-center'>
+<p className='w-[132px] p-5 font-semibold text-base text-[#90A3BF]'>Popular Car</p>
+<p className='w-[104px] text-[#3563E9] font-semibold text-base p-5'>View All</p>
+  </div>
+ {/* <div className='flex w-[1312px] h-[44px] text-base font-semibold gap-[1076px] justify-between items-center pl-8 pr-8'>
+                    <p className='text-[#90A3BF] w-[132px] h-[44px]'>Popular Cars</p>
+                    <p className='text-[#3563E9] w-[104px] h-[44px]'>View All</p>
+                    
+                </div> */}
+<div className='grid grid-cols-4 gap-5' >
+    {cars?.map((item :any , i:any)=>(
+        <Cards key={i} car={item}/>
+    ))}
+
 
 </div>
 
 
-  <div className='flex justify-center'>
-  <Link href='/page2'><button className='bg-[#3563E9] text-white w-[156px] h-44px] px-3 py-3 rounded-lg'>Show More Car</button></Link>
+
+<div className='flex w-[1312px] h-[64px] text-base font-semibold gap-[1076px] items-center'>
+                    <p className='text-[#90A3BF] h-[44px] ml-20'>Recommendation Car</p>
+                    
+                </div>
+<div className='grid grid-cols-4 gap-5' >
+    {Recommendedcars?.map((item :any , i:any)=>(
+        <Cards key={i} car={item}/>
+    ))}
+    </div>
+
+    <div className='flex justify-center'>
+  <Link href='/page2'><button className='bg-[#3563E9] text-white w-[156px] px-3 py-3 rounded-lg flex justify-center'>Show More Car</button></Link>
+  </div>
+</div>
+
+
+
 </div>
   
-   
-  
- 
-   <div>
-  
-</div>
 </div>
 
 

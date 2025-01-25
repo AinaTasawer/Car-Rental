@@ -3,9 +3,20 @@ import { FaHeart } from "react-icons/fa";
 import { MdLocalGasStation } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
 import Image from "next/image"
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { client } from '@/sanity/lib/client';
+import { allProducts } from '@/sanity/lib/queries';
+import Car from '@/sanity/schemaTypes/car';
 
-const Page3 = () => {
+interface Props{
+params:{
+    slug:string
+}
+}
+const Page3 = async({params}:Props) => {
+    const {slug} = await Promise.resolve(params)
+    const querry = `*[_type == "car" && slug.current == $slug[0]]`
+   
   return (
     <div className='w-[1440px] h-[2016px] bg-[#F6F7F9] flex'>
 <div className="side-menu">

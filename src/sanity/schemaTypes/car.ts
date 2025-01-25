@@ -68,14 +68,25 @@ const Car= {
         hotspot: true
       }
     },
+    // {
+    //   name: 'slug',
+    //   type: 'slug',
+    //   options: {
+    //     source: 'name', 
+    //     maxLength: 200,
+    //   },
+    // },
     {
       name: 'slug',
       type: 'slug',
+      title: 'Slug',
       options: {
-        source: 'name', 
+        source: 'name',
         maxLength: 200,
+        slugify: (input: string) => input.toLowerCase().replace(/\s+/g, '-').slice(0, 200),
       },
     },
+    
 
 
   ],

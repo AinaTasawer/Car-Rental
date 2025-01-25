@@ -1,14 +1,12 @@
 import React from 'react'
-import Hero from './homepage/page'
-import Cards from './cards/page'
+import Hero from './components/hero'
 
 
 
 const page = () => {
   return (
     <div>
-     {/* <Hero/> */}
-   <Cards/>
+     <Hero/>
     </div>
   )
 }
